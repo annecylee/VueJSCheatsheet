@@ -71,7 +71,7 @@ export default {
     })
   },
 }</code></pre>
-        <p>Here is the <a href="http://www.tingweili.com/PointMatters/">live demo</a> for internationalization your page using event bus.</p>
+        <p>Here is the <a href="http://www.tingweili.com/PointMattersDemo/">live demo</a> for internationalization your page using event bus.</p>
       </article>
     </div>
   </div>
