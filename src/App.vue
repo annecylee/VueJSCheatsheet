@@ -15,10 +15,6 @@
         <h4>Articles</h4>
         <ul>
           <li><a href="https://vuejs.org" target="_blank">Non Parent-Child Communication - Global Event Bus</a></li>
-          <li><a href="https://vuejs.org" target="_blank">Using webpack for structure</a></li>
-          <li><a href="https://vuejs.org" target="_blank">Using webpack for structure</a></li>
-          <li><a href="https://vuejs.org" target="_blank">Using webpack for structure</a></li>
-          <li><a href="https://vuejs.org" target="_blank">Using webpack for structure</a></li>
         </ul>
       </aside>
       <article class="col-md-10 col-lg-9 post">
@@ -26,7 +22,7 @@
         <p>According to Vue's <a href="http://vuex.vuejs.org/en/intro.html">document</a>,
           there are two ways for non parent-child communication (e.g. sibling communication).
           One is using Vuex, a <cite>"state management pattern + library for Vue.js applications."</cite>
-          Another way is to using global event bus. Vuex is more for medium-to-large-scale SPA. If your app is simple,
+          Another way is using global event bus. Vuex is more for medium-to-large-scale SPA. If your app is simple,
           Vuex will be verbose and daunting. A gobal event bus will be good enough. Here is an example to use event bus to translate page.
         </p>
         <h4 class="subtitle">Initializing</h4>
