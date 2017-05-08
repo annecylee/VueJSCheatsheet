@@ -7,7 +7,7 @@
       <!-- <span class="glyphicon glyphicon-menu-hamburger menu" aria-hidden="true"></span> -->
       <ul class="nav navbar-nav navbar-right" id="navigation">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="index.html">Contact</a></li>
+        <li><a href="www.tingweili.com">Contact</a></li>
       </ul>
     </nav>
     <div class="row main">
@@ -19,15 +19,16 @@
       </aside>
       <article class="col-md-10 col-lg-9 post">
         <h3>Non Parent-Child Communication - Global Event Bus</h3>
+        <small class="date">May 6, 2017</small>
         <p>According to Vue's <a href="http://vuex.vuejs.org/en/intro.html">document</a>,
           there are two ways for non parent-child communication (e.g. sibling communication).
-          One is using Vuex, a <cite>"state management pattern + library for Vue.js applications."</cite>
+          One is using Vuex, <cite>"a state management pattern + library for Vue.js applications."</cite>
           Another way is using global event bus. Vuex is more for medium-to-large-scale SPA. If your app is simple,
           Vuex will be verbose and daunting. A gobal event bus will be good enough. Here is an example to use event bus to translate page.
         </p>
         <h4 class="subtitle">Initializing</h4>
         <p>First, let's create an event bus and export it to make it sharable with outher compnents. In this scenario, the empty Vue instance is used as a central event bus.</p>
-          <p class="file-name">event-bus.js</p>
+          <p class="file-name">eventBus.js</p>
           <pre><code>import Vue from 'vue'
 export const EventBus = new Vue()</code></pre>
         <h4 class="subtitle">Sending Events</h4>
@@ -68,6 +69,13 @@ export default {
   },
 }</code></pre>
         <p>Here is the <a href="http://www.tingweili.com/PointMattersDemo/">live demo</a> for internationalization your page using event bus.</p>
+        <small class="reference">Reference:
+          <ul>
+            <li><a href="https://alligator.io/vuejs/global-event-bus/">Creating a Global Event Bus with Vue.js</a></li>
+            <li><a href="https://devblog.digimondo.io/building-a-simple-eventbus-in-vue-js-64b70fb90834">Building a Simple Event Bus in Vue.js</a></li>
+            <li><a href="https://vuejs.org/v2/guide/components.html#Non-Parent-Child-Communication">Vue.js Document</a></li>
+          </ul>
+        </small>
       </article>
     </div>
   </div>
@@ -115,6 +123,7 @@ h1 {
   font-size:20px;
   line-height: 1.1;
   font-family: 'Cabin Sketch', cursive;
+  color: #fff;
 }
 
 ul {
@@ -139,6 +148,7 @@ pre {
 .navbar {
   margin-bottom: 20px;
   padding: 0 40px;
+  background-color: #000;
 }
 
 #navigation {
@@ -174,10 +184,27 @@ pre {
   padding: 10px 50px;
 }
 
+.date {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  color: #999;
+}
+
 .subtitle {
   text-align: left;
   color: #666;
   margin-top: 30px;
   font-size: 18px;
+}
+
+.reference {
+  line-height: 60px;
+  opacity: 0.7;
+}
+
+.reference ul{
+  list-style: none;
+  display: inline-flex;
 }
 </style>
