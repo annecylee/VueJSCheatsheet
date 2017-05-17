@@ -14,11 +14,29 @@
       <aside class="col-md-2 col-lg-3 history">
         <h4>Articles</h4>
         <ul>
-          <li><a href="https://vuejs.org" target="_blank">Non Parent-Child Communication - Global Event Bus</a></li>
+          <li><a href="index.html#links">Useful links related to Vue.js</a></li>
+          <li><a href="index.html#event-bus">Non Parent-Child Communication - Global Event Bus</a></li>
         </ul>
       </aside>
       <article class="col-md-10 col-lg-9 post">
-        <h3>Non Parent-Child Communication - Global Event Bus</h3>
+
+        <h3 id="links">Useful links related to Vue.js</h3>
+        <small class="date">May 16, 2017</small>
+        <p>Here are some useful links that will make your development easier, from components to dev tools.</p>
+        <ul>
+          <li> <a href="http://element.eleme.io/#/en-US/component/layout">Element -- a Vue 2.0 based component library for developers</a>
+            <p>It provides demo and sample code for varied compnents, such as form, data, notice, navigation.</p>
+          </li>
+          <li> <a href="http://yuche.github.io/vue-strap/">VueStrap -- Bootstrap components built with Vue.js, no 3rd party plugins required.</a>
+            <p>Another component library that will speed up your effeciency.</p>
+          </li>
+          <li> <a href="http://monterail.github.io/vue-multiselect/#sub-option-groups">Vue-multiselect -- the most complete selecting solution for Vue.js</a>
+            <p>It contains single/multiple select, Server-side Rendering support, Ajax support, and fully configurable.</p>
+          </li>
+          <small>To be continune...</small>
+        </ul>
+        <hr>
+        <h3 id="event-bus">Non Parent-Child Communication - Global Event Bus</h3>
         <small class="date">May 6, 2017</small>
         <p>According to Vue's <a href="http://vuex.vuejs.org/en/intro.html">document</a>,
           there are two ways for non parent-child communication (e.g. sibling communication).
@@ -76,6 +94,8 @@ export default {
             <li><a href="https://vuejs.org/v2/guide/components.html#Non-Parent-Child-Communication">Vue.js Document</a></li>
           </ul>
         </small>
+
+        <hr>
       </article>
     </div>
   </div>
@@ -126,7 +146,11 @@ h1 {
   color: #fff;
 }
 
-ul {
+hr {
+  margin: 80px 0;
+}
+
+.nav ul {
   list-style-type:inherit;
   padding: 0;
   color: #0099ff;
